@@ -18,10 +18,11 @@ Build, browse, and share curated learning paths — Topics packed with deep-dive
 [![React Router](https://img.shields.io/badge/React_Router-7-CA4245?logo=reactrouter&logoColor=white)](https://reactrouter.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status: Alpha](https://img.shields.io/badge/Status-Alpha-f59e0b)]()
+[![Live](https://img.shields.io/badge/Live-View%20Demo-000000?logo=vercel&logoColor=white)](https://rox-guide.vercel.app/dashboard)
 
 <br />
 
-[Live Demo](#-live-demo) · [Features](#-features) · [Tech Stack](#-tech-stack) · [Quick Start](#-quick-start) · [Environment](#-environment-variables) · [Project Structure](#-project-structure) · [Design System](#-design-system) · [Roadmap](#-roadmap) · [Contributing](#-contributing) · [License](#-license)
+[**Live Demo**](https://rox-guide.vercel.app/dashboard) · [Features](#-features) · [Tech Stack](#-tech-stack) · [Quick Start](#-quick-start) · [Environment](#-environment-variables) · [Project Structure](#-project-structure) · [Design System](#-design-system) · [Roadmap](#-roadmap) · [Contributing](#-contributing) · [License](#-license)
 
 </div>
 
@@ -34,6 +35,23 @@ RoxGuide is a **personal + community-driven learning portal** for developers. In
 It's built for people who treat learning like shipping: track what you started, what you finished, and what's worth coming back to.
 
 > "Stop collecting links. Start building a brain."
+
+---
+
+## Live Demo
+
+The app is deployed on Vercel — give it a spin:
+
+**[https://rox-guide.vercel.app/dashboard](https://rox-guide.vercel.app/dashboard)**
+
+| Detail      | Value                                  |
+|-------------|----------------------------------------|
+| URL         | `https://rox-guide.vercel.app`         |
+| Default route | `/dashboard` (requires sign-in)      |
+| Stack       | Vercel + Supabase                      |
+| Status      | Alpha — expect rough edges             |
+
+> Tip: Sign up with any email + password to create a local account and explore your own topics and guides.
 
 ---
 
@@ -307,7 +325,9 @@ Please don't commit `.env` — the `.gitignore` will block you, but be aware tha
 
 ## License
 
-[MIT](LICENSE) — go build something weird with it.
+Released under the **[MIT License](LICENSE)**. See the [LICENSE](LICENSE) file for the full text.
+
+> "Go build something weird with it."
 
 ---
 

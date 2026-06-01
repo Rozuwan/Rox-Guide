@@ -1,27 +1,173 @@
-# Logs
-logs
-*.log
+# =====================================================
+#  RoxGuide – .gitignore
+#  A developer-focused knowledge base / learning portal
+#  React 19 · Vite 8 · Supabase · Tailwind v4
+# =====================================================
+
+# ---------- Node / package managers ----------
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+bun-debug.log*
+.pnpm-store/
+.yarn/cache
+.yarn/install-state.gz
+.yarn/build-state.yml
+.yarn/unplugged
+.pnp.*
+.yarn-integrity
+package-lock.json.bak
 
-node_modules
-dist
-dist-ssr
-*.local
+# ---------- Build output ----------
+dist/
+dist-ssr/
+build/
+out/
+.vite/
+*.tsbuildinfo
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ---------- Vite & framework caches ----------
+.vite-cache/
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.svelte-kit/
+.remix/
+
+# ---------- Environment files & secrets ----------
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.crt
+secrets.json
+service-account.json
+firebase-adminsdk-*.json
 
-# Editor directories and files
+# ---------- Logs ----------
+logs/
+*.log
+*.log.*
+*.pid
+*.seed
+*.pid.lock
+
+# ---------- Testing & coverage ----------
+coverage/
+.nyc_output/
+junit.xml
+test-results/
+playwright-report/
+playwright/.cache/
+.lighthouseci/
+cypress/videos/
+cypress/screenshots/
+
+# ---------- Lint / formatter caches ----------
+.eslintcache
+.stylelintcache
+.prettiercache
+.pnpm-debug.log*
+
+# ---------- Editor / IDE ----------
 .vscode/*
 !.vscode/extensions.json
-.idea
+!.vscode/settings.json.example
+.idea/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+.factorypath
+
+# ---------- OS junk ----------
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Trashes
+.Spotlight-V100
+.VolumeIcon.icns
+.AppleDouble
+.LSOverride
+Icon?
+ehthumbs_view.db
+
+# ---------- Windows specific ----------
+*.lnk
+*.url
+*.lnk
+*.cab
+*.msi
+*.msm
+*.msp
+*.chm
+*.hhk
+*.hhc
+*.hhp
+*.tmp
+*.tmp.dmp
+*.dmp
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# ---------- Misc / project artifacts ----------
+*.local
+.history/
+.tmp/
+.temp/
+tmp/
+temp/
+.cache-loader
+*.sublime-project
+*.sublime-workspace
+.netrwhist
+*.orig
+
+# ---------- Internal design analysis (not for public repo) ----------
+DESIGN.md
+vercel/DESIGN.md
+DESIGN/
+design/
+.design/
+
+# ---------- Vercel / Netlify deploy outputs ----------
+.vercel/
+.netlify/
+.vercel.json.local
+
+# ---------- Supabase local artifacts ----------
+supabase/.branches
+supabase/.temp
+supabase/.env
+.brANCH_ENDPOINT
+
+# ---------- Screenshots / recordings (dev-only) ----------
+screenshots/
+*.mov
+*.mp4
+*.webm
+captures/
+
+# ---------- Lockfiles for alternate package managers ----------
+# Keep the one we use; uncomment the others as needed.
+# yarn.lock
+# pnpm-lock.yaml
